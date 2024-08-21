@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tea House</title>
+    <!-- Link: font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-duotone-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-thin.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-solid.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-regular.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.6.0/css/sharp-light.css"
+    />
+    <!-- Link: google Monrope font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link: tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            fontFamily: {
+              Manrope: ["Manrope", "ui-sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-Manrope">
+    <header>
+      <nav class="flex container py-4 justify-between mx-auto lg:px-8 px-2">
+        <div>
+          <a href="#" class="text-3xl 2xl:text-4xl font-bold"
+            >Deshi <span class="text-orange-500">Tea</span></a
+          >
+        </div>
+        <ul class="md:flex hidden text-sm 2xl:text-lg gap-12">
+          <li
+            class="cursor-pointer py-2 px-4 hover:bg-slate-200 rounded-md font-medium"
+          >
+            Home
+          </li>
+          <li
+            class="cursor-pointer py-2 px-4 hover:bg-slate-200 rounded-md font-medium"
+          >
+            About
+          </li>
+          <li
+            class="cursor-pointer py-2 px-4 hover:bg-slate-200 rounded-md font-medium"
+          >
+            Contact
+          </li>
+          <li
+            class="cursor-pointer py-2 px-4 hover:bg-slate-200 rounded-md font-medium"
+          >
+            Vlogs
+          </li>
+        </ul>
+        <div class="relative md:hidden z-10">
+          <details class="absolute right-2 cursor-pointer">
+            <summary class="list-none">
+              <i
+                class="fa-sharp fa-light fa-circle-ellipsis-vertical text-2xl"
+              ></i>
+            </summary>
+            <ul
+              class="absolute right-4 rounded-md shadow-md shadow-slate-500 p-3 bg-white"
+            >
+              <option
+                class="py-2 px-4 rounded-md transition-all duration-150 hover:bg-slate-200"
+                value="Home"
+              >
+                Home
+              </option>
+              <option
+                class="py-2 px-4 rounded-md transition-all duration-150 hover:bg-slate-200"
+                value="About"
+              >
+                About
+              </option>
+              <option
+                class="py-2 px-4 rounded-md transition-all duration-150 hover:bg-slate-200"
+                value="Contact"
+              >
+                Contact
+              </option>
+              <option
+                class="py-2 px-4 rounded-md transition-all duration-150 hover:bg-slate-200"
+                value="Vlogs"
+              >
+                Vlogs
+              </option>
+            </ul>
+          </details>
+        </div>
+      </nav>
+      <section
+        class="mt-6 mx-auto gap-10 md:gap-0 flex md:flex-row flex-col lg:px-8 px-2 container"
+      >
+        <div class="flex lg:w-1/2 flex-col items-start justify-center">
+          <h1 class="lg:text-6xl text-5xl font-extrabold lg:leading-[70px]">
+            It's good <br />
+            tea time at The <br />
+            Tea House
+          </h1>
+          <p class="text-sm mt-3">
+            Tea and Botanical Solutions Supplier Give Optimum <br />
+            Satisfaction To Your Taste Buds.
+          </p>
+          <button
+            class="font-bold py-3 px-5 bg-gradient-to-l from-[#FF0000] to-[#FF8938] text-white rounded-md mt-6"
+          >
+            Explore More
+            <i class="fa-solid fa-arrow-up-long rotate-45 ml-3"></i>
+          </button>
+        </div>
+        <div class="relative">
+          <img class="max-w-11/12" src="./images/banner.png" alt="" />
+          <div
+            class="shadow-lg p-4 absolute bottom-6 left-20 bg-white rounded-md flex justify-center items-center gap-2"
+          >
+            <div>
+              <i class="fa-sharp fa-solid fa-star text-2xl text-orange-300"></i>
+            </div>
+            <div>
+              <h4 class="text-xl font-bold">5.00</h4>
+              <p class="text-sm">Trust Pilot Ratings</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+  </body>
+</html>
